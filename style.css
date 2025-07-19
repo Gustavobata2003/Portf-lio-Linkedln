@@ -1,0 +1,104 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5faff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: #005fa3;
+    margin-bottom: 1rem;
+    border-left: 4px solid #0077cc;
+    padding-left: 0.5rem;
+}
+
+.about p, .dados ul, .skills ul {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.dados ul, .skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dados li, .skills li {
+    margin-bottom: 0.4rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.dados li::before, .skills li::before {
+    content: "•";
+    color: #0077cc;
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #005fa3;
+    color: white;
+}
